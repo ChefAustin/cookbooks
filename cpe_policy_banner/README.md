@@ -10,6 +10,7 @@ Attributes
 ----------
 * node['cpe_policy_banner']['configure']
 * node['cpe_policy_banner']['remove']
+
 * node['cpe_policy_banner']['customize']['font_face']
 * node['cpe_policy_banner']['customize']['image_file']
 * node['cpe_policy_banner']['customize']['banner_message_1']
