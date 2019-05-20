@@ -9,27 +9,27 @@ Requirements
 Attributes
 ----------
 **"Killswitch" Attributes:**
-* node['cpe_policy_banner']['configure']
+* `node['cpe_policy_banner']['configure']`
   - When set to `true`, this will make the cookbook set the `PolicyBanner` as defined in the cookbook's `attributes.rb` file.
-* node['cpe_policy_banner']['remove']
+* `node['cpe_policy_banner']['remove']`
   - When set to `true`, this will trigger the `:remove` action on any existing `PolicyBanner` configurations intact at run-time. This action is run prior to the `:configure` action.
 
 **Customization Attributes:**
-* node['cpe_policy_banner']['customize']['font_face']
+* `node['cpe_policy_banner']['customize']['font_face']`
   - The `font_face` attribute defines the font that will be used for all text in the entire `PolicyBanner`.
-* node['cpe_policy_banner']['customize']['image_file']
+* `node['cpe_policy_banner']['customize']['image_file']`
   - Set this to the name of a `.png` file that exists in the `files` directory. This is the image that will bee displayed on the `PolicyBanner`. For sake of demonstrating its use, a default `chef.png` image has been placed in the cookbook and pre-defined in the `attributes.rb` file.
-* node['cpe_policy_banner']['customize']['banner_message_1']
+* `node['cpe_policy_banner']['customize']['banner_message_1']`
   - This is the first message that will be displayed in the `PolicyBanner`. The font size of this message can be defined with the `font_size_1` attribute.
-* node['cpe_policy_banner']['customize']['font_size_1']
+* `node['cpe_policy_banner']['customize']['font_size_1']`
   - `font_size_1` will set the size of the font for the first block of text (defined in `banner_message_1`).
-* node['cpe_policy_banner']['customize']['banner_message_2']
+* `node['cpe_policy_banner']['customize']['banner_message_2']`
   - This is the second message that will be displayed in the `PolicyBanner`. The font size of this message can be defined with the `font_size_2` attribute.
-* node['cpe_policy_banner']['customize']['font_size_2']
+* `node['cpe_policy_banner']['customize']['font_size_2']`
   - `font_size_2` will set the size of the font for the first block of text (defined in `banner_message_2`).
-* node['cpe_policy_banner']['customize']['banner_message_3']
+* `node['cpe_policy_banner']['customize']['banner_message_3']`
   - This is the third, and final, message that will be displayed in the `PolicyBanner`. The font size of this message can be defined with the `font_size_3` attribute.
-* node['cpe_policy_banner']['customize']['font_size_3']
+* `node['cpe_policy_banner']['customize']['font_size_3']`
   - `font_size_3` will set the size of the font for the first block of text (defined in `banner_message_3`).
 
 Do note that all attributes are best set to `nil` and then configured within a `cpe_init` recipe rather than as you see them currently. If this statement is confusing, you likely need to read through the `README.md` from the Facebook repo.
