@@ -36,7 +36,7 @@ Attributes
 Usage
 -----
 
-Remove existing `PolicyBanner` configuration and set new configuration (as defined by `attrbiutes.rb`):
+Remove existing `PolicyBanner` configuration and set new configuration (as defined by `attributes.rb`):
 ```
 cpe_policy_banner 'Remove existing PolicyBanner' do
   only_if { node['cpe_policy_banner']['remove'] }
