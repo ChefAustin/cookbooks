@@ -4,7 +4,7 @@
 # Recipe:: default
 #
 
-#return unless node.macos?
+return unless node.macos?
 
 cpe_policy_banner 'Remove existing PolicyBanner' do
   only_if { node['cpe_policy_banner']['remove'] }

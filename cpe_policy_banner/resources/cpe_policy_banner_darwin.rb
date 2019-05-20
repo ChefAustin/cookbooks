@@ -18,7 +18,7 @@ end
 action :configure do
   directory '/Library/Security/PolicyBanner.rtfd' do
     path '/Library/Security/PolicyBanner.rtfd'
-    owner 'austin.culter' # node.console_user
+    owner node.console_user
     group 'staff'
     mode '0755'
     action :create
@@ -27,7 +27,7 @@ action :configure do
   template 'TXT.rtf.erb' do
     source 'TXT.rtf.erb'
     path '/Library/Security/PolicyBanner.rtfd/TXT.rtf'
-    owner 'austin.culter' # node.console_user
+    owner node.console_user
     group 'staff'
     mode '0644'
     variables(
@@ -46,7 +46,7 @@ action :configure do
 
   cookbook_file 'chef.png' do
     path '/Library/Security/PolicyBanner.rtfd/chef.png'
-    owner 'austin.culter'
+    owner node.console_user
     group 'staff'
     mode '0644'
     action :create
