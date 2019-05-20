@@ -11,7 +11,7 @@ cpe_policy_banner 'Remove existing PolicyBanner' do
   action :remove
 end
 
-cpe_policy_banner 'Appyling defined PolicyBanner' do
+cpe_policy_banner 'Applying defined PolicyBanner' do
   only_if { node['cpe_policy_banner']['configure'] }
   action :configure
 end
