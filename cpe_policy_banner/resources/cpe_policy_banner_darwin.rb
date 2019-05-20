@@ -35,8 +35,6 @@ action :configure do
       banner_message_1: node['cpe_policy_banner']['customize']['banner_message_1'],
       font_size_1: node['cpe_policy_banner']['customize']['font_size_1'],
       image_file: node['cpe_policy_banner']['customize']['image_file'],
-      image_width: node['cpe_policy_banner']['customize']['image_width'],
-      image_height: node['cpe_policy_banner']['customize']['image_height'],
       banner_message_2: node['cpe_policy_banner']['customize']['banner_message_2'],
       font_size_2: node['cpe_policy_banner']['customize']['font_size_2'],
       banner_message_3: node['cpe_policy_banner']['customize']['banner_message_3'],
