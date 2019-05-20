@@ -26,11 +26,11 @@ Attributes
 * node['cpe_policy_banner']['customize']['banner_message_2']
   - This is the second message that will be displayed in the `PolicyBanner`. The font size of this message can be defined with the `font_size_2` attribute.
 * node['cpe_policy_banner']['customize']['font_size_2']
-- `font_size_2` will set the size of the font for the first block of text (defined in `banner_message_2`).
+  - `font_size_2` will set the size of the font for the first block of text (defined in `banner_message_2`).
 * node['cpe_policy_banner']['customize']['banner_message_3']
   - This is the third, and final, message that will be displayed in the `PolicyBanner`. The font size of this message can be defined with the `font_size_3` attribute.
 * node['cpe_policy_banner']['customize']['font_size_3']
-- `font_size_3` will set the size of the font for the first block of text (defined in `banner_message_3`).
+  - `font_size_3` will set the size of the font for the first block of text (defined in `banner_message_3`).
 
 
 Usage
