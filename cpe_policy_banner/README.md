@@ -32,6 +32,7 @@ Attributes
 * node['cpe_policy_banner']['customize']['font_size_3']
   - `font_size_3` will set the size of the font for the first block of text (defined in `banner_message_3`).
 
+Do note that all attributes are best set to `nil` and then configured within a `cpe_init` recipe rather than as you see them currently. If this statement is confusing, you likely need to read through the `README.md` from the Facebook repo.
 
 Usage
 -----
