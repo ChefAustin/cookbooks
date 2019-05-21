@@ -33,3 +33,7 @@ Usage
 Set a hotkey-action in `attributes/default.rb` as a string of abbreviated characters in `+`-delimited format.
 
 i.e. `'ctrl+shift+cmd+left'`
+
+TODO
+-----
+DRY it up
