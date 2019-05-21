@@ -4,7 +4,7 @@
 # Recipe:: default
 #
 
-# return unless node.macos? # TODO: Uncommnt when switched to node.console_user
+return unless node.macos?
 
 cpe_spectacle 'Configure Spectacle' do
   only_if { node['cpe_spectacle']['configure'] }

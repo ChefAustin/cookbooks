@@ -7,4 +7,4 @@ description 'Applies a Spectacle configuration to a macOS node'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.1.0'
 
-# depends 'cpe_utils' # TODO: Uncomment when switched to node.console_user
+depends 'cpe_utils'

@@ -9,7 +9,7 @@ provides :cpe_spectacle, :os => 'darwin'
 default_action :configure
 
 action :configure do
-  template "/Users/austin.culter/Library/Application Support/Spectacle/Shortcuts.json" do # TODO: Switch to node.console_user
+  template "/Users/#{node.console_user}/Library/Application Support/Spectacle/Shortcuts.json" do
     source 'Shortcuts.json.erb'
     mode '0644'
     variables(
