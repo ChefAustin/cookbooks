@@ -20,7 +20,7 @@ action :install do
     destination node['cpe_mtmr']['installation']['destination']
     dmg_name "MTMR #{node['cpe_mtmr']['install']['version']}.dmg"
     owner 'austin.culter' # TODO: Switch to node.console_user after testing
-    source "https://github.com/Toxblh/MTMR/releases/download/v0.20.1/MTMR.#{version}.dmg"
+    source node['cpe_mtmr']['installation']['dmg_source']
     volumes_dir '/Volumes/MTMR'
   end
 end

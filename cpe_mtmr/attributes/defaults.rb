@@ -13,7 +13,8 @@ default['cpe_mtmr']['remove'] = nil
 #### Install action configuration parameters
 default['cpe_mtmr']['installation'] = {
   'version': '0.21.1',
-  'destination': '/Applications'
+  'destination': '/Applications',
+  'dmg_source': "https://github.com/Toxblh/MTMR/releases/download/v0.20.1/MTMR.#{version}.dmg"
 }
 
 #### Default Button configuration
