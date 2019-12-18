@@ -1,6 +1,6 @@
 cpe_mtmr Cookbook
 =====================
-Configures MTMR preferences.
+Configures [MTMR](https://github.com/Toxblh/MTMR) preferences.
 
 Requirements
 ------------
