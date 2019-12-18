@@ -9,17 +9,15 @@ provides :cpe_mtmr, :os => 'darwin'
 default_action :configure
 
 action :configure do
+  pretty_array = []
+  node['cpe_mtmr']['preferences'].each do |_k, v|
+    next unless v['enabled']
 
-  pretty_json = Chef::JSONCompat.to_json_pretty(node['cpe_mtmr']['preferences'])
-
-  file '/Users/austin.culter/Library/Application Support/MTMR/items.json' do
-    content [pretty_json]
-    only_if { node['cpe_mtmr']['configure'] }
+    pretty_array << v.reject { |subkey, _subvalue| subkey == 'enabled' || nil }
   end
 
-  # template 'items.json' do
-  #   source 'items.json.erb'
-  #   variables :settings => pretty_settings
-  #   action :create
-  # end
+  file '/Users/austin.culter/Library/Application Support/MTMR/items.json' do
+    content Chef::JSONCompat.to_json_pretty(pretty_array)
+    only_if { node['cpe_mtmr']['configure'] }
+  end
 end
